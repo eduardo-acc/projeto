@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automotivas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">Automotiva</h1>
+    <nav>
+      <a href="#">Financiamento</a>
+      <a href="#">Fipe</a>
+      <a href="#">Lojas</a>
+      <a href="#">Pós venda</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Agende uma visita</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="fiat.png" alt="Carro destaque" />
+    </section>
+
+    <!-- Popup do formulário -->
+    <div class="popup" id="popup">
+      <button id="closeBtn">&times;</button>
+      <h2>GANHE UM DESCONTO DE ATÉ <span class="highlight">R$ 3.000,00</span></h2>
+      <form>
+        <input type="text" placeholder="Seu nome" />
+        <input type="tel" placeholder="Telefone" />
+        <input type="email" placeholder="Email" />
+        <select>
+          <option>Selecione uma loja</option>
+          <option>Loja 1</option>
+          <option>Loja 2</option>
+        </select>
+        <button type="submit" class="btn">SOLICITAR</button>
+      </form>
+    </div>
+
+    <!-- Barrinha lateral -->
+    <div class="sidebar" id="sidebar">
+      SEU DESCONTO ESTÁ AQUI!
+    </div>
+  </main>
+
+  <!-- Carrossel -->
+  <div class="carrossel">
+    <!-- Slide 1 -->
+    <div class="slide ativo">
+      <div class="card">
+        <img src="fiat.png" alt="Utilitário">
+        <h3>Utilitários</h3>
+        <a href="#" class="btn-card">Conferir</a>
+      </div>
+      <div class="card">
+        <img src="suv.jpg" alt="SUV">
+        <h3>SUV</h3>
+        <a href="#" class="btn-card">Conferir</a>
+      </div>
+      <div class="card">
+        <img src="sedan.jpg" alt="Sedan">
+        <h3>Sedan</h3>
+        <a href="#" class="btn-card">Conferir</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div class="card">
+        <img src="hatch.png" alt="Hatch">
+        <h3>Hatch</h3>
+        <a href="#" class="btn-card">Conferir</a>
+      </div>
+      <div class="card">
+        <img src="suv.jpg" alt="SUV">
+        <h3>SUV</h3>
+        <a href="#" class="btn-card">Conferir</a>
+      </div>
+      <div class="card">
+        <img src="sedan.jpg" alt="Sedan">
+        <h3>Sedan</h3>
+        <a href="#" class="btn-card">Conferir</a>
+      </div>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="indicadores">
+      <span class="ativo" onclick="mudarSlide(0)"></span>
+      <span onclick="mudarSlide(1)"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
